@@ -1,0 +1,2 @@
+pyserial>=3.5
+gpiozero>=1.6  # цифрови входове (GPIO) и --de-gpio

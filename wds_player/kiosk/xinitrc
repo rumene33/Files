@@ -1,0 +1,19 @@
+#!/bin/sh
+# Стартира плейъра на цял екран върху голия X сървър (Raspberry Pi OS Lite).
+# Ползва се от install.sh:  startx <този файл> -- -nocursor
+APP_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+
+xset s off        # без скрийнсейвър
+xset s noblank
+xset -dpms        # без изключване на екрана
+
+# Папка за настройки/шоута на USB флашка (слага я install.sh --data-usb). Ако флашката
+# липсва, плейърът стартира със стандартните места.
+[ -f /etc/default/wds-player ] && . /etc/default/wds-player
+if [ -n "${WDS_MOUNT:-}" ] && mountpoint -q "$WDS_MOUNT"; then
+    export WDS_DATA_DIR
+else
+    unset WDS_DATA_DIR
+fi
+
+exec python3 "$APP_DIR/main.py" --fullscreen

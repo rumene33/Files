@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=WDS DMX Player
+Comment=DMX плейър за .wds файлове
+Exec=python3 /home/pi/wds_player/main.py --fullscreen
+Terminal=false

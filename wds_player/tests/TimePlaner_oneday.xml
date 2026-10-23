@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Syncronorm_Timeplanerfile_V1.0 GUID="732556e2-bbfd-414d-b60d-bbad052e3022" CreateDate="10/23/2026 08:40:00" LastUpdate="10/23/2026 08:40:00" PlanName="Test 23.10 12h">
+  <Dayplans> <Day GUID="0fc73302-1a25-416b-af0b-78a2226166ef" Name="23.10 Test"> <items> <event EventName="Test" EventType="1" StartBy="12:00:00" Counts="1" Lenght="63.0866596193054" InFadeTime="0" InDelayTime="0" ContentGUID="Test" Color="-1"> </event></items></Day></Dayplans>
+  <Weekplans> </Weekplans>
+  <Yearplans> <Year GUID="59001a9c-9352-48a2-a12e-58efaa474dd0" Yearnumber="2026"> <items> <event EventGUID="0fc73302-1a25-416b-af0b-78a2226166ef" EventName="23.10 Test" EventIsDayplan="True" Daynumber="23" MonthNumber="10"> </event></items></Year></Yearplans>
+  <CueList> </CueList>
+  <PlayLists> </PlayLists>
+</Syncronorm_Timeplanerfile_V1.0>
